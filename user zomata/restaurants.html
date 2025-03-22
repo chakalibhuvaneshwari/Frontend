@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #171616, #040404);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .restaurant {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        .restaurant h2 {
+            color: #ff6f61;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .food-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .food-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .food-item .details {
+            flex: 1;
+        }
+
+        .food-item h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .food-item p {
+            margin: 5px 0;
+            color: #777;
+        }
+
+        .food-item .price {
+            color: #ff6f61;
+            font-weight: bold;
+        }
+
+        .food-item .rating {
+            color: #ffcc00;
+            font-size: 16px;
+        }
+
+        .food-item .review {
+            color: #555;
+            font-style: italic;
+        }
+
+        .food-item button {
+            background: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        .food-item button:hover {
+            background: #ff3b2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Top Restaurants</h1>
+
+    <!-- Restaurant 1 -->
+    <div class="restaurant"> 
+        <a href="index.html" style="background-color: #f0f0f0; color: #333; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; font-size: 16px;">Back</a>
+        <h2>Restaurant 1: Tasty Junction</h2>
+        <div class="food-item">
+            <img src="https://t4.ftcdn.net/jpg/02/74/99/01/360_F_274990113_ffVRBygLkLCZAATF9lWymzE6bItMVuH1.jpg" alt="Burger">
+            <div class="details">
+    
+                <h3>Classic Burger</h3>
+                <p class="price">$8.99</p>
+                <p class="rating">★★★★☆ (4.2)</p>
+                <p class="review">"Juicy and delicious!"</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="food-item">
+            <img src="https://t3.ftcdn.net/jpg/00/27/57/96/360_F_27579652_tM7V4fZBBw8RLmZo0Bi8WhtO2EosTRFD.jpg" alt="Pizza">
+            <div class="details">
+                <h3>Pepperoni Pizza</h3>
+                <p class="price">$12.99</p>
+                <p class="rating">★★★★★ (4.8)</p>
+                <p class="review">"Best pizza in town!"</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="food-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWtFVGsI7ix4LV4xFcUcAri4oNyI7e9oieJA&s" alt="Pasta">
+            <div class="details">
+                <h3>Spaghetti Carbonara</h3>
+                <p class="price">$10.99</p>
+                <p class="rating">★★★★☆ (4.3)</p>
+                <p class="review">"Creamy and flavorful."</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="food-item">
+            <img src="https://media.istockphoto.com/id/1454741285/photo/roast-fish-and-vegetable-salad-on-wooden-background.jpg?s=612x612&w=0&k=20&c=Slmk-RLvdR3317E5W2UKLul4y1ZH3axjL2XCNOBZbhE=" alt="Salad">
+            <div class="details">
+                <h3>Caesar Salad</h3>
+                <p class="price">$7.99</p>
+                <p class="rating">★★★☆☆ (3.9)</p>
+                <p class="review">"Fresh and healthy."</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="food-item">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/027/536/411/small/delicious-french-fries-on-a-white-background-photo.jpg" alt="Fries">
+            <div class="details">
+                <h3>French Fries</h3>
+                <p class="price">$4.99</p>
+                <p class="rating">★★★★☆ (4.1)</p>
+                <p class="review">"Crispy and golden."</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    <!-- Restaurant 2 -->
+    <div class="restaurant">
+        <h2>Restaurant 2: Royal Flavors</h2>
+        <div class="food-item">
+            <img src="https://t4.ftcdn.net/jpg/04/36/36/57/360_F_436365754_z3i5Es0sFmZuLY6GZIzdiU01v9HqpGZe.jpg" alt="Biryani">
+            <div class="details">
+                <h3>Chicken Biryani</h3>
+                <p class="price">$11.99</p>
+                <p class="rating">★★★★★ (4.7)</p>
+                <p class="review">"Authentic and spicy!"</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="food-item">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/07/chicken-butter-masala-recipe.jpg" alt="Butter Chicken">
+            <div class="details">
+                <h3>Butter Chicken</h3>
+                <p class="price">$13.99</p>
+                <p class="rating">★★★★☆ (4.4)</p>
+                <p class="review">"Rich and creamy."</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="food-item">
+            <img src="https://media.istockphoto.com/id/1150376593/photo/bread-tandoori-indian-cuisine.jpg?s=612x612&w=0&k=20&c=GGT5LN7G4zLhJTEnP_KcyvYuayi8f1nJcvQwvmj0rCM=" alt="Naan">
+            <div class="details">
+                <h3>Garlic Naan</h3>
+                <p class="price">$3.99</p>
+                <p class="rating">★★★★☆ (4.2)</p>
+                <p class="review">"Soft and flavorful."</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="food-item">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2Ftb3NhfGVufDB8fDB8fHww" alt="Samosa">
+            <div class="details">
+                <h3>Samosa</h3>
+                <p class="price">$2.99</p>
+                <p class="rating">★★★★☆ (4.0)</p>
+                <p class="review">"Crispy and tasty."</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="food-item">
+            <img src="https://t4.ftcdn.net/jpg/02/04/62/15/360_F_204621512_E73amQQrCpi4ZPlFBWqfjv5RQjrMsLqx.jpg" alt="Lassi">
+            <div class="details">
+                <h3>Mango Lassi</h3>
+                <p class="price">$4.99</p>
+                <p class="rating">★★★★★ (4.9)</p>
+                <p class="review">"Refreshing and sweet."</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    <!-- Restaurant 3 -->
+    <div class="restaurant">
+        <h2>Restaurant 3: Zuhu Palace</h2>
+        <div class="food-item">
+            <img src="https://www.shutterstock.com/image-photo/closeup-shot-mouthwatering-maki-sushi-260nw-2524703473.jpg" alt="Sushi Roll">
+            <div class="details">
+                <h3>California Roll</h3>
+                <p class="price">$9.99</p>
+                <p class="rating">★★★★☆ (4.3)</p>
+                <p class="review">"Fresh and delicious."</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="food-item">
+            <img src="https://t3.ftcdn.net/jpg/06/62/49/20/360_F_662492046_Y8LTwYNlwVpRj13MYUlS0KWupPquqAqj.jpg" alt="Sashimi">
+            <div class="details">
+                <h3>Salmon Sashimi</h3>
+                <p class="price">$14.99</p>
+                <p class="rating">★★★★★ (4.7)</p>
+                <p class="review">"Melt-in-your-mouth goodness."</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="food-item">
+            <img src="https://images.indianexpress.com/2024/04/RAMEN-1.jpg?w=414" alt="Ramen">
+            <div class="details">
+                <h3>Tonkotsu Ramen</h3>
+                <p class="price">$12.99</p>
+                <p class="rating">★★★★☆ (4.5)</p>
+                <p class="review">"Rich and flavorful broth."</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="food-item">
+            <img src="https://t3.ftcdn.net/jpg/04/90/45/20/360_F_490452030_SX32SiO4ytYvzCq2HDvnRpmpGfdMnjfD.jpg" alt="Tempura">
+            <div class="details">
+                <h3>Shrimp Tempura</h3>
+                <p class="price">$8.99</p>
+                <p class="rating">★★★★☆ (4.2)</p>
+                <p class="review">"Light and crispy."</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="food-item">
+            <img src="https://cdn.tasteatlas.com/images/dishes/7cce87e6040347f5930f6356a6b4ab52.jpg?w=600" alt="Mochi">
+            <div class="details">
+                <h3>Mochi Ice Cream</h3>
+                <p class="price">$5.99</p>
+                <p class="rating">★★★★★ (4.8)</p>
+                <p class="review">"Sweet and chewy."</p>
+            </div>
+            <button>Order Now</button>
+        </div>
+    </div>
+</body>
+</html>

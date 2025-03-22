@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .order-details {
+            margin-bottom: 20px;
+        }
+
+        .order-details p {
+            margin-bottom: 5px;
+        }
+
+        .payment-options {
+            margin-bottom: 20px;
+        }
+
+        .payment-options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .payment-options input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .cod-details { /* Initially hidden */
+            display: none;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-button {
+           background-color: #f44336; /* Red */
+           margin-right: 10px; /* Space between buttons */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Order Confirmation</h2>
+
+        <div class="order-details">
+            <p><strong>Product:</strong> Sample Product</p>
+            <p><strong>Quantity:</strong> 2</p>
+            <p><strong>Price:</strong> $20</p>
+            <p><strong>Total:</strong> $40</p>
+            </div>
+
+        <div class="payment-options">
+            <label>
+                <input type="radio" name="payment_method" value="credit_card"> Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment_method" value="cod" id="cod_option"> Cash on Delivery (COD)
+            </label>
+
+            <div class="cod-details" id="cod_details">
+                <p>Please enter your address for COD:</p>
+                <textarea rows="4" cols="50"></textarea>
+            </div>
+        </div>
+
+        <button class="back-button" onclick="goBack()">Back</button> <button onclick="confirmOrder()">Confirm Order</button>
+    </div>
+
+    <script>
+        const codOption = document.getElementById('cod_option');
+        const codDetails = document.getElementById('cod_details');
+
+        codOption.addEventListener('change', function() {
+            if (this.checked) {
+                codDetails.style.display = 'block';
+            } else {
+                codDetails.style.display = 'none';
+            }
+        });
+
+        function confirmOrder() {
+            // Here you would typically handle the order confirmation logic,
+            // such as sending data to a server.  For this example, we'll
+            // just show an alert.
+            alert("Order confirmed!");
+        }
+
+        function goBack() {
+            // Navigate back to the previous page in the browser history
+            window.history.back();
+        }
+
+    </script>
+
+</body>
+</html>
